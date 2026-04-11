@@ -1,2 +1,3 @@
 # cow-of-truth
-Cow who always saying truth about ur friends
+Developing this amazing app
+pls wait
