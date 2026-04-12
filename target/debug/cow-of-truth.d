@@ -1,1 +1,1 @@
-/home/chk/cow-of-truth-vs/target/debug/cow-of-truth: /home/chk/cow-of-truth-vs/src/main.rs
+/home/chk/cow-of-truth/target/debug/cow-of-truth: /home/chk/cow-of-truth/src/main.rs

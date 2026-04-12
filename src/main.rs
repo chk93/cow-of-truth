@@ -1,33 +1,41 @@
 use std::io;
 
 fn main() {
-
-    let version = "alpha 0.1.0";
+    let version = "alpha 0.2.0";
     println!("{}", version);
     println!("Введите имя друна:");
 
     let faggot = "пидорас";
     let fat = "жирный";
 
-    let mut inputmenu = String::new();
-    io::stdin().read_line(&mut inputmenu).expect("Иди нахуй");
+    let inputmenu = {
+        let mut input = String::new();
+        io::stdin().read_line(&mut input).expect("Иди нахуй");
+        input.trim().to_string()
+    };
 
-    println!("Ваш друн жирни? Да/Нет");
-    let mut fatmenu = String::new();
-    io::stdin().read_line(&mut fatmenu).expect("Иди нахуй");
-    let fatmenu = fatmenu.trim();
+    let fatm = loop {
+        let answer = fatmenu();
+        if answer == "Да" || answer == "Нет" {
+            break answer;
+        } else {
+            println!("Ошибка: ответ только Да/Нет, соблюдая регистр");
+        }
+    };
 
-    if fatmenu == "Да" {
-         println!("Ваш друн жирни? Да/Нет");
-         let inputmenu = inputmenu.trim();
-         println!("Думаю...");
-         println!("{} {} {}", inputmenu, fat, faggot); 
-    } else if fatmenu == "Нет"{
-         let inputmenu = inputmenu.trim();
-         println!("Думаю...");
-         println!("{} {}", inputmenu, faggot); 
+    if fatm == "Да" {
+        println!("Думаю...");
+        println!("{} {} {}", inputmenu, fat, faggot); 
     } else {
-        println!("неправильное написание");
+        println!("Думаю...");
+        println!("{} {}", inputmenu, faggot);
     }
+}
 
+fn fatmenu() -> String {
+    println!("Ваш друн жирни? Да/Нет");
+
+    let mut fatm = String::new();
+    io::stdin().read_line(&mut fatm).expect("Иди нахуй");
+    fatm.trim().to_string()
 }
