@@ -5,9 +5,9 @@ pls wait
 
 Comming soon:
 
-GUI or cli, idk
+-GUI or cli, idk
 
-Easter eggs
+-Easter eggs
 
 
 
