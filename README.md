@@ -1,9 +1,15 @@
 # cow-of-truth
-Developing this amazing app
+Development has been suspended, I'll definitely finish it later, there are more important projects right now
+
 pls wait
 
-< 1 >
- ---
+Comming soon:
+GUI or cli, idk
+Easter eggs
+
+
+
+        < I always saying truth >
         \   ^__^
          \  (oo)\_______
             (__)\       )\/\
