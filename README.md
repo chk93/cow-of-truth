@@ -7,6 +7,8 @@ pls wait
 
 -GUI or cli, idk
 
+-English language
+
 -Easter eggs
 
 
