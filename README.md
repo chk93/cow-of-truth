@@ -3,7 +3,7 @@ Development has been suspended, I'll definitely finish it later, there are more 
 
 pls wait
 
-Comming soon:
+##### Comming soon:
 
 -GUI or cli, idk
 
